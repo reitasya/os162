@@ -1,0 +1,19 @@
+total 64
+drwxr-xr-x 15 reitasya.devina StafCS 4096 Sep 13 14:30 .
+drwx--x--x  3 reitasya.devina StafCS 4096 Sep 13 14:27 ..
+drwxr-xr-x  8 reitasya.devina StafCS 4096 Sep 13 14:29 .git
+-rw-r--r--  1 reitasya.devina StafCS    0 Sep 13 14:30 lab01.txt
+-rw-r--r--  1 reitasya.devina StafCS    7 Sep  8 15:19 README.md
+drwxr-xr-x  2 reitasya.devina StafCS 4096 Sep 13 14:22 SandBox
+drwxr-xr-x  2 reitasya.devina StafCS 4096 Sep 13 14:27 week00
+drwxr-xr-x  2 reitasya.devina StafCS 4096 Sep 13 14:13 week01
+drwxr-xr-x  2 reitasya.devina StafCS 4096 Sep 13 14:13 week02
+drwxr-xr-x  2 reitasya.devina StafCS 4096 Sep 13 14:13 week03
+drwxr-xr-x  2 reitasya.devina StafCS 4096 Sep 13 14:14 week04
+drwxr-xr-x  2 reitasya.devina StafCS 4096 Sep 13 14:14 week05
+drwxr-xr-x  2 reitasya.devina StafCS 4096 Sep 13 14:14 week06
+drwxr-xr-x  2 reitasya.devina StafCS 4096 Sep 13 14:14 week07
+drwxr-xr-x  2 reitasya.devina StafCS 4096 Sep 13 14:15 week08
+drwxr-xr-x  2 reitasya.devina StafCS 4096 Sep 13 14:15 week09
+drwxr-xr-x  2 reitasya.devina StafCS 4096 Sep 13 14:15 week10
+/home/fasilkom/mahasiswa/r/reitasya.devina/os162/week01
