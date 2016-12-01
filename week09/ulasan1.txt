@@ -1,0 +1,40 @@
+Cloud Computing
+Dalam ulasan 1 ini, kami akan membuat review dari video Youtube yang membahas tentang Cloud Computing. Video yang kami pilih yaitu video dari channel Eli the Computer Guy yang berjudul “Introduction to Cloud computing” yang berdurasi selama 76 menit dan diunggah pada tanggal 17 Februari 2011 lalu ( url : https://www.youtube.com/watch?v=QYzJl0Zrc4M&app=desktop). Dalam video ini, seorang presenter yang bernama Eli akan menjelaskan cloud computing untuk para pemula. Berikut ialah review dari video terse but.
+
+
+
+Cloud computing mungkin masih samar untuk orang awam, namun secara sadar atau tidak sadar kita pasti pernah menggunakan cloud computing di kehidupan sehar-hari. Secara harfiahnya, Cloud Computing merupakan sebuah design konsep yang kompleks yang memisahkan aplikasi dari operating system yang menjalankan segalanya. jadi intinya dengan cloud computing kita dapat mendistribusi dan mengakses data menggunakan internet. Cara kerjanya ialah cloud computing akan memisahkan aplikasi dari operating system dan hardware yang dapat membuat virtual computing. Dimana virtual computing ialah komponen dari cloud computing yang bertugas membagi operating sytem kedalam server yang berbeda dan jika salah satu server tersebut mengalami kegagalan maka secara otomatis data tersebut tetap ada karena server tersebut telah terintegrasi dengan server lainnya sehingga proses yang sedang berlangsung akan tetap dapat berjalan. Selain itu, cloud computing juga memliki kegunaaan lainnya diantaranya keamanan data meningkat dikarenakan untuk mengakses server penyimpanan tersebut kita membutuh akun yang terintegrasi di sertai password yang kita buat, tingginya fleksbiltas dan skalabiltas dalam megakses data karena kita data mengakses data dimana saja dan kapan saja selama kita terhubung dengan internet, dan yang terakhir kita dapat menghemat biaya hal ini dikarenakan kita tidak perlu lagi membeli hardisk atau infrastruktur lainnya kita hanya dikenakan biaya yang disepakati dalam penggunaan internet dan penggunaan cloud computing yang tidak akan sebesar pembelian infrastruktur atau hardisk.
+
+Didalam video ini, terdapat beberapa bahasan lain terkait dengan cloud computing, diantaranya :
+1. Web application
+Merupakan salah satu contoh cloud computing. Karena saat seseorang ingin mengakses sebuah web app, maka orang tersebut akan mengakses aplikasi yang ada di server menggunakan web browser yang ada di komputer orang tersebut. Contoh : google docs.
+2. Database cluster
+Pada dasarnya database cluster ini membagi beberapa server berbeda dan menghubungkan server-server tersebut dengan sebuah aplikasi yang dapat di cluster (Contoh : database app - mysql). Setelah itu, server yang telah di cluster akan di set up sehingga terhubung satu sama lain. Saat user ingin mengakses data yang ada di cluster, maka server-server yang terhubung akan saling terintegrasi lalu user akan dihubungkan dengan salah satu server yang ada. Jika salah satu server sudah limit, maka user akan diarahkan ke sever lain yang memiliki data yang sama dengan server-server lainnya.
+3. Terminal Services
+Terdapat istilah Thin Client, yaitu software yang harus diinstal agar dapat terhubung dengan terminal services server. Biasanya terminal services ini digunakan saat ingin mengakses full desktop. Jadi terminal service ini adalah suatu yang powerful yang memiliki segalanya yang dapat diprovide nya dan thin client lah yang akan menngakses full desktopmya, dan aplikasi-aplikasi yang ada di dalamnya.
+4. Applications Servers
+Masih menggunakan terminal service server tapi tidak menampilkan full environment, melainkan hanya menampilkan aplikasi spesifik.
+5. Virtualisation
+Dapat memisahkan operating system dari suatu hardware yang menjalankannya dan dapat mentransfer seluruh operating sistem tersebut dengan aplikasi dari suatu server hardware ke yang lainnya namun semuanya tetap berjalan dengan lancar.
+Terbagi dua:
+-Hypervisors -Desktop Client
+
+6. Hosted Instances
+7. Hosted Solution
+8. Public vs private clouds
+
+Di dalam pembagiannya, terdapat dua jenis cloud computing, yaitu public cloud dan private clouds. Dimana public cloud disediakan untuk masyarakat umum, kita hanya tinggal mendaftar sebagai user untuk memakai layanan yang ada. Sedangkan private cloud ialah layanan cloud computingyang disediakan untuk memenuh kebutuhan suatu perusahaan. Sehingga hanya karyawan dari perusahaan tersebut yang boleh menggunkan cloud.
+
+Menurut kami, video tersebut mudah di mengerti dan cukup jelas karena memang ditujukan untuk para pemula. Selain itu, dengan adanya pemodelan menggunakan gambar di papan tulis memudahkan kita dalam memahami hal yang Eli maksud. Namun, ada beberapa hal yang mengganjal dalam video tersebut, seperti artikulasi yang tidak jelas tapi cukup terbantu karena adanya subtittle dan penjelasan yang cenderung membosankan karena dari dari awal hingga akhir video Eli terus memberikan penjelas yang statis. Selebihnya, video ini sangat kami särankan.
+
+Dalam pembuatannya review ini 
+Dibuat oleh :
+Putri Ramadhanty ( putriramadhanty96@gmail.com )(https://github.com/putriramadhanty/os162)
+Reitasya Devina ( reitasya.devina@gmail.com) (https://github.com/reitasya/os162)
+
+URL Konten Youtube :
+https://www.youtube.com/watch?v=QYzJl0Zrc4MURL
+Durasi konten YouTube : 76 menit
+URL Ulasan : http://putrirmd.blogspot.co.id/2016/12/cloud-computing.html
+Tanggal Submisi Revisi Pertama : 25 November 2016
+Tanggal Submisi Revisi Terakhir : 1 Desember 2016
