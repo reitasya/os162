@@ -1,57 +1,73 @@
-Dalam ulasan 2 ini, kami (Putri & Reitasya) akan membuat review dari video Youtube yang membahas tentang “Principles of Operating System” dimana Barbara Hecker selaku presenter akan lebih fokus membahas tentang “The concept of Main Memory in operating”. Video ini dipublikasikan pada tanggal 7 November 2011 dari channel Barbara Hecker. Berikut ialah review dari video tersebut.
+
+dy>
+<p>
+Dalam ulasan 2 ini, kami (Putri & Reitasya) akan membuat review dari video Youtube yang membahas tentang “Principles of Operating System” dimana Barbara Hecker selaku presenter akan lebih fokus membahas tentang “The concept of Main Memory in operating”. Video ini dipublikasikan pada tanggal 7 November 2011 dari channel Barbara Hecker. Berikut ialah review dari video tersebut.</p><br>
+
+<pr>
+-Memory adalah tulang punggung sebuah proses. Tanpa adanya memori maka proses bukanlah apa-apa. Memori dan register adalah bagian penyimpanan yang dapat di akses CPU secara langsung. Register adalah bagian dari memori yang paling cepat di akses karena paling dekat dengan CPU.<br><br>
+
+Terdapat beberapa bahasan di dalam video ini, berikut point-point nya :<br><br>
+Addres binding dari instruksi dan data ke memori terjadi dalam tiga tahap :<br>
+   1.Compile time<br>
+   2.Load time<br>
+   3.Execution time<br><br>
+
+-Logical vs Phisycal Address Space<br>
+   1.Physical memory,  adalah sebuah chip yang berukuran kecil yang terdapat di dalam sebuah board. Physical address adalah address yang dapat     dibaca oleh unit memory<br>
+   2.Logical memory, terikat dengan beberapa physical address space sebagai pusat manajemen memori. Logical address juga di generate oleh CPU, biasa disebut virtual karena sebenarnya logical address tidak benar-benar ada.<br><br>
+
+-Memory Management Unit (MMU), adalah sebuah device yang mengarahkan virtual address ke physical address. Dalam hal ini program yang dijalankan user hanya berkutik dengan logical address dan tidak pernah benar-benar berkutik dengan physical address (karena ada MMU).<br>
+
+-Dynamic Loading, sebuah mekanisme yang dapat berjalan saat run time dan me-load sebuah library ke memori.<br>
+   1.Routine tidak benar-benar di-load sampai benar-benar dipanggil<br>
+   2.Pemanfaatan memory-space lebih baik<br>
+   3.Sangat berguna saat menggunakan kode yang banyak untuk meng-handle sebuah kasus yang jarang terjadi.<br><br>
+
+-Dynamic Linking, sebuah mekanisme yang dilakukan oleh operating system yang meload dan me-link sebuah shared library<br>
+   1.Terjadi penundaan sampai execution time<br>
+   2.Sebagian kecil kode (stub) yang digunakan untuk merelokasi library routine dari memory resident<br>
+   3.Stub melakukan replace terhadap diriya sendiri dengan alamat dari routie dan mengeksekusi routine<br>
+   4.Operating system akan melakukan pengecekkan apakah routine sudah memproses memory address<br>
+   5.Dynamic Linking berguna untuk library<br>
+   6.Sistem ini juga disebut sebagai shared libraries<br><br>
+
+-Swapping, sebuah proses dapat di swap keluar memori ke backing-store secara temporari lalu kembali lagi ke memori untuk pengeksekusian selanjutnya. Sebagian besar dari waktu swap adalah transfer time.<br><br>
+
+-Contiguous Allocation, Main memory biasanya terdiri atas dua part yaitu low dan high memory. Resident os terjadi di low memory setelah diproses barulah berpindah ke high memory<br><br>
+
+-Multiple-partition Allocation<br>
+   1.Hole, adalah block dari beberapa memori yang tersedia, dan terdiri dari beberapa ukuran yang tersebar melalui memori. Saat sebuah proses datang maka akan diakomodasikan ke hole.<br><br>
+</p>
+
+<p>
+
+-Fragmentation, Dibagi menjadi 2 bagian, diantaranya External dan Internal. Dimana External (masalah variable sized partition) memiliki ruang memory free, namun tidak contiguous, holes ada di antara proses-proses berturutan, dan tidak dapat digunakan karena proses terlalu besar untuk menggunakannya. Sedangkan Internal (masalah fixed size) memiliki sifat program dinamis yaitu mudah alokas-dialokasi dan Memori yang teralokasi mungkin lebih besar dari memori yang diminta sehingga menjadi wasted.<br><br>
+
+-Paging, Membagi memori fisik ke dalam blok (page, frame) dengan ukuran tertentu (fixed) yang seragam. Memudahkan manajemen free memory (hole) yang dapat bervariasi. Tidak perlu menggabungkan hole menjadi blok yang besar seperti pada variable partition (compaction).OS lebih sederhana dalam mengontrol (proteksi dan kebijakan) pemakaian memori untuk satu proses. Standard ukuran blok memori fisik yang dialokasikan (de-alokasi) untuk setiap proses. Dan biasanya ukuran tergantung OS(pangkat 2 antara 512 byte s/d 16 KB).<br><br>
+
+-Address translation scheme, Address logik dari CPU dianggap terdiri atas dua bagian:<br>
+   1.Page number (p): merupakan indeks dalam tabel yang berisi base address dari tiap page dalam memori fisik<br>
+   2.Page offset (d): menunjukkan lokasi address memori berdasarkan “base address” pada page tersebut.<br><br>
+
+-Implementaion of the page table, Setiap OS mempunyai cara menyimpan page table untuks setiap proses, dimana setiap page table bagian dari setiap proses. Page table juga berada di memori, saat proses tersebut dieksekusi dan iInformasi page table disimpan oleh PCB: pointer ke page table dari proses tersebut. Setiap kali terjadi context switch => informasi page table untuk proses yang baru harus di restore (misalkan referensi/pointer lokasi page table tsb. di memori).<br><br>
+
+-Segmentation, SegmentationSegmentasi merupakan skema manajemen memori yang mendukung cara pandang seorang programmer terhadap memori. Segementasi logical unit dibagi beberapa bagian , sepertim main program, procedure, function, method, object, dll. Dimana masing-masing segment tersebut mempunyai segment-number dan offset. Contohnya yang dilakukan di The Intel Pentium dimana dalam video tersebut dibahas dengan rinci.<br><br>
+ 
+Menurut kami, video tersebut cukup menarik dan jelas. Karena berlatarkan slides tentang topi tersebut dan cara pembawaan Barbara Hecker dalam menerangkan santai namun tetap dapat dimengerti. Namun, ada beberapa hal yang mengganjal dalam video tersebut, seperti artikulasi dan penggalan kata yang tidak jelas serta kurangnya pemodelan dalam memberika contoh. Selebihnya, video ini sangat kami sarankan.</p><br>
 
 
--Memory adalah tulang punggung sebuah proses. Tanpa adanya memori maka proses bukanlah apa-apa. Memori dan register adalah bagian penyimpanan yang dapat di akses CPU secara langsung. Register adalah bagian dari memori yang paling cepat di akses karena paling dekat dengan CPU. Addres binding dari instruksi dan data ke memori terjadi dalam tiga tahap :
-1.Compile time
-2.Load time
-3.Execution time
+Dalam pembuatannya review ini <br>
+Dibuat oleh :<br>
+Putri Ramadhanty ( putriramadhanty96@gmail.com )(https://github.com/putriramadhanty/os162)<br>
+Reitasya Devina ( reitasya.devina@gmail.com) (https://github.com/reitasya/os162)<br>
+URL Konten Youtube :https://www.youtube.com/watch?v=5B4dbnD9DMg&t=2728s <br>
+Durasi konten YouTube : 87 menit 45 detik<br>
+URL Ulasan  : <br>
+http://ulasan2putrireitasya.blogspot.co.id/2016/12/principle-of-operating-system.html<br>
+Tanggal Submisi Revisi Pertama : 10 Desember 2016<br>
+Tanggal Submisi Revisi Terakhir : 11 Desember 2016<br>
 
--Logical vs Phisycal Address Space
-1.Physical memory, adalah sebuah chip yang berukuran kecil yang terdapat di dalam sebuah board. Physical address adalah address yang dapat dibaca oleh unit memory
-2.Logical memory, terikat dengan beberapa physical address space sebagai pusat manajemen memori. Logical address juga di generate oleh CPU, biasa disebut virtual karena sebenarnya logical address tidak benar-benar ada.
 
--Memory Management Unit (MMU), adalah sebuah device yang mengarahkan virtual address ke physical address. Dalam hal ini program yang dijalankan user hanya berkutik dengan logical address dan tidak pernah benar-benar berkutik dengan physical address (karena ada MMU).
--Dynamic Loading, sebuah mekanisme yang dapat berjalan saat run time dan me-load sebuah library ke memori.
-1.Routine tidak benar-benar di-load sampai benar-benar dipanggil
-2.Pemanfaatan memory-space lebih baik
-3.Sangat berguna saat menggunakan kode yang banyak untuk meng-handle sebuah kasus yang jarang terjadi.
 
--Dynamic Linking, sebuah mekanisme yang dilakukan oleh operating system yang meload dan me-link sebuah shared library
-1.Terjadi penundaan sampai execution time
-2.Sebagian kecil kode (stub) yang digunakan untuk merelokasi library routine dari memory resident
-3.Stub melakukan replace terhadap diriya sendiri dengan alamat dari routie dan mengeksekusi routine
-4.Operating system akan melakukan pengecekkan apakah routine sudah memproses memory address
-5.Dynamic Linking berguna untuk library
-6.Sistem ini juga disebut sebagai shared libraries
-
--Swapping, sebuah proses dapat di swap keluar memori ke backing-store secara temporari lalu kembali lagi ke memori untuk pengeksekusian selanjutnya. Sebagian besar dari waktu swap adalah transfer time.
-
--Contiguous Allocation, Main memory biasanya terdiri atas dua part yaitu low dan high memory. Resident os terjadi di low memory setelah diproses barulah berpindah ke high memory
-
--Multiple-partition Allocation
-1.Hole, adalah block dari beberapa memori yang tersedia, dan terdiri dari beberapa ukuran yang tersebar melalui memori. Saat sebuah proses datang maka akan diakomodasikan ke hole.
-
--Fragmentation, Dibagi menjadi 2 bagian, diantaranya External dan Internal. Dimana External (masalah variable sized partition) memiliki ruang memory free, namun tidak contiguous, holes ada di antara proses-proses berturutan, dan tidak dapat digunakan karena proses terlalu besar untuk menggunakannya. Sedangkan Internal (masalah fixed size) memiliki sifat program dinamis yaitu mudah alokas-dialokasi dan Memori yang teralokasi mungkin lebih besar dari memori yang diminta sehingga menjadi wasted.
-
--Paging, Membagi memori fisik ke dalam blok (page, frame) dengan ukuran tertentu (fixed) yang seragam. Memudahkan manajemen free memory (hole) yang dapat bervariasi. Tidak perlu menggabungkan hole menjadi blok yang besar seperti pada variable partition (compaction).OS lebih sederhana dalam mengontrol (proteksi dan kebijakan) pemakaian memori untuk satu proses. Standard ukuran blok memori fisik yang dialokasikan (de-alokasi) untuk setiap proses. Dan biasanya ukuran tergantung OS(pangkat 2 antara 512 byte s/d 16 KB).
-
--Address translation scheme, Address logik dari CPU dianggap terdiri atas dua bagian:
-1.Page number (p): merupakan indeks dalam tabel yang berisi base address dari tiap page dalam memori fisik
-2.Page offset (d): menunjukkan lokasi address memori berdasarkan “base address” pada page tersebut.
-
--Implementaion of the page table, Setiap OS mempunyai cara menyimpan page table untuks setiap proses, dimana setiap page table bagian dari setiap proses. Page table juga berada di memori, saat proses tersebut dieksekusi dan iInformasi page table disimpan oleh PCB: pointer ke page table dari proses tersebut. Setiap kali terjadi context switch => informasi page table untuk proses yang baru harus di restore (misalkan referensi/pointer lokasi page table tsb. di memori).
-
--Segmentation, SegmentationSegmentasi merupakan skema manajemen memori yang mendukung cara pandang seorang programmer terhadap memori. Segementasi logical unit dibagi beberapa bagian , sepertim main program, procedure, function, method, object, dll. Dimana masing-masing segment tersebut mempunyai segment-number dan offset. Contohnya yang dilakukan di The Intel Pentium dimana dalam video tersebut dibahas dengan rinci.
-
-Menurut kami, video tersebut cukup menarik dan jelas. Karena berlatarkan slides tentang topi tersebut dan cara pembawaan Barbara Hecker dalam menerangkan santai namun tetap dapat dimengerti. Namun, ada beberapa hal yang mengganjal dalam video tersebut, seperti artikulasi dan penggalan kata yang tidak jelas serta kurangnya pemodelan dalam memberika contoh. Selebihnya, video ini sangat kami sarankan.
-
-Dalam pembuatannya review ini 
-Dibuat oleh :
-Putri Ramadhanty ( putriramadhanty96@gmail.com )(https://github.com/putriramadhanty/os162)
-Reitasya Devina ( reitasya.devina@gmail.com) (https://github.com/reitasya/os162)
-URL Konten Youtube :https://www.youtube.com/watch?v=5B4dbnD9DMg&t=2728s 
-Durasi konten YouTube : 87 menit 45 detik
-URL Ulasan : 
-http://ulasan2putrireitasya.blogspot.co.id/2016/12/principle-of-operating-system.html
-Tanggal Submisi Revisi Pertama : 10 Desember 2016
-Tanggal Submisi Revisi Terakhir : 10 Desember 2016
+</body> 
+</html>
